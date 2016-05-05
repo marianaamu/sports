@@ -1,0 +1,2 @@
+module SurvesHelper
+end

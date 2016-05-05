@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @surf.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @surf.status %>
+</p>
+
+<%= link_to 'Edit', edit_surf_path(@surf) %> |
+<%= link_to 'Back', surves_path %>

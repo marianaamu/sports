@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tenni.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tenni.status %>
+</p>
+
+<%= link_to 'Edit', edit_tenni_path(@tenni) %> |
+<%= link_to 'Back', tennis_path %>

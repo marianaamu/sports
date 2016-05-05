@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @golf.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @golf.status %>
+</p>
+
+<%= link_to 'Edit', edit_golf_path(@golf) %> |
+<%= link_to 'Back', golves_path %>

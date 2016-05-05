@@ -1,0 +1,27 @@
+<h1>Listing golves</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @golves.each do |golf| %>
+      <tr>
+        <td><%= golf.description %></td>
+        <td><%= golf.status %></td>
+        <td><%= link_to 'Show', golf %></td>
+        <td><%= link_to 'Edit', edit_golf_path(golf) %></td>
+        <td><%= link_to 'Destroy', golf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Golf', new_golf_path %>

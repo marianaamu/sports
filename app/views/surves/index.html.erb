@@ -1,0 +1,27 @@
+<h1>Listing surves</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surves.each do |surf| %>
+      <tr>
+        <td><%= surf.description %></td>
+        <td><%= surf.status %></td>
+        <td><%= link_to 'Show', surf %></td>
+        <td><%= link_to 'Edit', edit_surf_path(surf) %></td>
+        <td><%= link_to 'Destroy', surf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surf', new_surf_path %>
